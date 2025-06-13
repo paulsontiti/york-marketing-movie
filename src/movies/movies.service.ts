@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import { Movie } from '@prisma/client';
 
 import { PrismaService } from 'src/prisma/prisma.service';
 
@@ -8,12 +7,12 @@ export class MoviesService {
      constructor(private prisma: PrismaService) {}
 
   async getMovies(
-  ): Promise<Movie[]> {
+  ): Promise<any[]> {
     return this.prisma.movie.findMany();
   }
 
  async getRandomMovies(random:string
-  ): Promise<Movie[]> {
+  ): Promise<any[]> {
     console.log(random.split(","))
     return this.prisma.movie.findMany();
   }
