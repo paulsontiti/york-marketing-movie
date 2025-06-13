@@ -1,6 +1,6 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { MoviesService } from './movies.service';
-import { Movie } from 'generated/prisma';
+import { Movie } from "../../generated/prisma";
 
 @Controller('movies')
 export class MoviesController {
