@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "env": {
-    "DATABASE_URL": "postgresql://postgres:q3rOoFQx9E3EeZjy@db.nbwbhhqihopgcfgtguoy.supabase.co:5432/postgres"
-  },
   "builds": [
     {
       "src": "src/main.ts",
