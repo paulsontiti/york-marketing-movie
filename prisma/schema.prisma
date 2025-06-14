@@ -9,12 +9,12 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
 model Movie {
-  id       Int    @id @default(autoincrement())
+  id       String   @id @default(uuid()) @map("_id")
   title    String @unique
   year     String
   rated    String
