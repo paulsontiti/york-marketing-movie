@@ -6,6 +6,9 @@
       "use": "@vercel/node"
     }
   ],
+  "env": {
+    "DATABASE_URL": "mongodb+srv://paulsontiti:movie@cluster0.mo5l1wj.mongodb.net/movies?retryWrites=true&w=majority&appName=Cluster0"
+  },
   "routes": [
     {
       "src": "/(.*)",
