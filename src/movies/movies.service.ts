@@ -18,8 +18,9 @@ export class MoviesService {
 
     randomIndices.forEach((index) => {
       const movie = movies[parseInt(index)];
+    
       if (movie) {
-        randonMovies.push();
+        randonMovies.push(movie);
       }
     });
     return randonMovies;
